@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <title>Lista de Exercícios - APE - Monitoria</title>
     <style type="text/css">
         @charset "UTF-8";
@@ -19,6 +20,15 @@
             font-family: 'Roboto Slab', sans-serif;
             margin: 0;
             animation: 1.5s init;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        ul {
+            list-style-type: none;
         }
 
         @keyframes init {
@@ -59,7 +69,6 @@
 
         header div a {
             display: inline-block;
-            text-decoration: none;
             color: #eee;
             margin: 10px 10px;
             border: 1px solid #eee;
@@ -95,7 +104,42 @@
                 padding: 0 0;
             }
         }
+
         /* ---- main ---- */
+        /*main section {
+            padding: 3rem 10rem;
+        }
+
+        .header .title {
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 40px; 
+        }
+
+        main section .header .fa-python {
+            font-size: 30px;
+            padding-left: 10px;
+        }*/
+
+        main section {
+        }
+
+        .header .title {
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 20px; 
+        }
+
+        main section .header .fa-python {
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+        
+
+        main section .listas ul li {
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -108,7 +152,21 @@
         </div>
     </header>
     <main>
+        <section class="main">
+            <div class="header">
+                <p><span class="title">Listas de Exercícios</span> <i class="fab fa-python"></i></p>
+            <div><hr>
+            <div class="listas">
+                <ul>
+                    <li><i class="fas fa-folder-open"></i> <a href="Lista_de_Exercício_01/">Lista de Exercícios 01</li>
+                    <li><i class="fas fa-folder-open"></i> <a href="Lista_de_Exercício_02/">Lista de Exercícios 02</a></li>
+                    <li><i class="fas fa-folder-open"></i> <a href="Lista_de_Exercício_03/">Lista de Exercícios 03</a></li>
+                    <li><i class="fas fa-folder-open"></i> <a href="Lista_de_Exercício_04/">Lista de Exercícios 04</a></li>
+                    <li><i class="fas fa-folder-open"></i> <a href="Lista_de_Exercício_05/">Lista de Exercícios 05</a></li>
+                </ul>
+            </div>
 
+        </section>
     </main>
     <footer>
 
