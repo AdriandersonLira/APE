@@ -60,6 +60,7 @@
         header div h1 {
             margin-top: 0;
             font-size: 25px;
+            padding: 10px 30px;
         }
 
         header div p {
@@ -101,34 +102,26 @@
 
         @media (min-width: 1000px) {
             header div p {
+                padding: 0 100px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            header div p {
                 padding: 0 0;
             }
         }
 
         /* ---- main ---- */
-        /*main section {
-            padding: 3rem 10rem;
-        }
-
-        .header .title {
-            font-size: 30px;
-            font-weight: bold;
-            padding-left: 40px; 
-        }
-
-        main section .header .fa-python {
-            font-size: 30px;
-            padding-left: 10px;
-        }*/
 
         main section {
             padding-bottom: 50px;
         }
 
-        .header .title {
+        main section .header .title {
             font-size: 20px;
             font-weight: bold;
-            padding-left: 20px; 
+            padding-left: 40px; 
         }
 
         main section .header .fa-python {
@@ -138,16 +131,56 @@
 
         main section .listas ul li {
             padding-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        main section .listas ul li .fa-folder-open {
+            color: rgb(245, 232, 48);
+        }
+
+        @media (min-width: 425px) {
+            main {
+                padding: 0 20px;
+            }
+        }
+
+        @media (min-width: 600px) {
+            main {
+                padding: 0 80px;
+            }
+        }
+
+        @media (min-width: 750px) {
+            main {
+                padding: 0 100px;
+            }
+
+            main section .listas ul li {
+                padding-left: 40px;
+            }
+
+            main section .header {
+                padding-top: 20px;
+            }
+        }
+
+        @media (min-width: 1500px) {
+            main {
+                padding: 0 300px;
+            }
         }
 
         /* ---- footer ---- */
 
         footer {
             background-image: linear-gradient(90deg, #0D69AC, #F5CD30 200%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         div.footer {
-            padding: 10px;
+            padding: 10px 80px;
             color: #eee;
             display: inline-block;
             text-align: center;
@@ -155,6 +188,45 @@
 
         div.footer a {
             color: #eee;
+        }
+
+        @media (min-width: 426px) {
+            div.footer {
+                padding: 30px;
+            }   
+        }
+
+        @media (min-width: 800px) {
+            footer div.footer {
+                padding: 30px 0;
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+            }
+
+            footer div.primeiro {
+                text-align: left;
+                padding-right: 100px;
+            }
+
+            footer div.segundo {
+                text-align: right;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            footer div.primeiro {
+                padding-right: 250px;
+            }
+        }   
+
+        @media (min-width: 1300px) {
+            footer div.primeiro {
+                padding-right: 500px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+
         }
     </style>
 </head>
@@ -168,7 +240,7 @@
         </div>
     </header>
     <main>
-        <section class="main">
+        <section>
             <div class="header">
                 <p><span class="title">Listas de Exercícios</span> <i class="fab fa-python"></i></p>
             <div><hr>
@@ -187,15 +259,18 @@
     </main>
     <footer>
         <div class="footer">
-            <p>Project maintained by Adrianderson Lira</p>
-            <p>Hosted on Github Pages - Theme Adrianderson Lira</p>
+            <div class="primeiro">
+                <p>Project maintained by Adrianderson Lira</p>
+                <p>Hosted on Github Pages - Theme Adrianderson Lira</p>
+                <p>&copy; 2019 Adrianderson Lira, Github, Inc. </p>
+            </div>
 
+            <div class="segundo">
+                <p><i class="fab fa-github"></i> <a href="https://github.com/AdriandersonLira">Meu Github</a></p>
+                <p><i class="fab fa-whatsapp"></i> +55 (83) 98863-6175 </p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/adriandersonlira/">@adriandersonlira</a> </p>
+            </div>
             
-            <p><i class="fab fa-github"></i> <a href="https://github.com/AdriandersonLira">Meu Github</a></p>
-            <p><i class="fab fa-whatsapp"></i> +55 (83) 98863-6175 </p>
-            <p><i class="fab fa-instagram"></i> @adriandersonlira </p>
-
-            <p>&copy; 2019 Adrianderson Lira, Github, Inc. </p>
         </div>
     </footer>
 </body>
