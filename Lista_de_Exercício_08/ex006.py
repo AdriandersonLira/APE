@@ -1,3 +1,5 @@
+# ------ COM DICIONARIO ------ #
+'''
 lista_estados = {
         'Acre': 0,  
         'Alagoas': 0,  
@@ -49,3 +51,35 @@ if ',' in estado:
     print(f'Os estados mais votados foram: {estado}')
 else:
     print(f'O estado mais votado foi: {estado}')
+
+'''
+
+# ------ COM LISTA ------ #
+
+lista_estados = ['Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Distrito Federal','Espírito Santo','Goias','Maranhão','Mato Grosso','Mato Grosso do Sul','Minas Gerais','Pará','Paraíba','Paraná','Pernambuco','Piauí','Rio de Janeiro','Rio Grande do Norte','Rio Grande do Sul','Rondônia','Roraima','Santa Catarina','São Paulo','Sergipe','Tocantins']
+lista_cont = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+while True:
+    escolha = input('Digite o nome do Estado: ')
+    if escolha not in lista_estados:
+        print('\n-- esse estado nao existe --\n')
+        break
+    else:
+        for i in range(len(lista_estados)):
+            if escolha == lista_estados[i]:
+                lista_cont[i] += 1
+    print(lista_cont)
+
+cont = float('-Inf')
+estado = ''
+for i in range(len(lista_estados)):
+    if lista_cont[i] > cont: 
+        cont = lista_cont[i]
+        estado = lista_estados[i]
+    elif lista_cont[i] == cont:
+        estado += f', {lista_estados[i]}'
+
+if ',' in estado:
+    print(f'Os estados mais votados foram: {estado} com {cont} votos')
+else:
+    print(f'O estado mais votado foi: {estado}  com {cont} votos')
