@@ -22,9 +22,6 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=IFPB&color=greenlabelColor=000000">
 </p>
 
-<p align="center">
-  <img alt="Soparia Zona Sul" src="img/sopaicon.png" width="3%">
-</p>
 <br>
 
 ## Tecnologias 🚀
